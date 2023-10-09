@@ -1,0 +1,153 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif
+ }
+
+ body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background-image: url(imgs/bg.png);
+    background-position: center;
+    background-size: cover;
+ }
+
+ header {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    
+ }
+
+.logo {
+    width: 30%;
+    padding-left: 4rem;
+    
+}
+
+.logo img {
+    width: 50%;
+}
+
+nav {
+    width: 70%;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+}
+
+main{
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+}
+
+.cta{
+    width: 40%;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.cta h1{
+    font-size: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.cta p{
+    padding-left: 4rem;
+    padding-right: 12rem;
+    line-height: 2rem;
+}
+
+.cta .inputs{
+    padding-left: 4rem;
+    
+}
+
+.cta .inputs a{
+    text-decoration: none;
+    color: rgb(241, 151, 16);
+    background-color: white;
+    margin-right: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    font-weight: 600;
+    border: none;
+}
+.slide{
+    width: 50%;
+}
+
+.slide img{
+    width: 500px;
+    height: 52 0px;
+    margin-top: 1rem;
+} 
+
+.social-media{
+    width: 10%;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4rem;
+}
+
+.social-media p {
+    position: absolute;
+    font-weight: 700;
+    color: #fff;
+    transform: rotate(90deg) translateX(-160%);
+}
+
+.social-media div {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    margin-top: .2rem;
+}
+
+.social-media div img {
+    width: 30px;
+    height: 30px;
+}
+
+.legend{
+    background-color: rgba(255, 255, 255, 0.753);
+    padding: 1.5rem 4rem;
+    width: 400px;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    position: relative;
+    z-index: 9;
+    margin: -118px 0 0 41px;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.cta .inputs a:hover {
+    background-image: linear-gradient(to bottom, #ffbd00, #ff7300,#cb1b00);
+    color: white;
+}
+
+a:hover{
+    color: rgb(241, 151, 16);
+    border-bottom: 1px solid rgb(241, 151, 16);
+}
