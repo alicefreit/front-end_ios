@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações</title>
+</head>
+<body>
+<header>
+    <h3>Informações</h3>
+</header>
+<main>
+    <span class="nome"></span><br> 
+    <span class="idade"></span><br> 
+    <span class="signo"></span><br> 
+        <ul> Contatos:
+            <li class="email"></li>
+            <li class="numero"></li>
+        </ul>
+</main>
+        <script>
+            var vnome;
+             vnome = prompt('Digite seu nome:');
+            var vidade;
+             vidade = prompt('Digite sua idade:');
+            var vsigno;
+             vsigno = prompt('Digite seu signo:');
+            var vemail;
+             vemail = prompt('Digite seu email:');
+            var vnumero;
+             vnumero = prompt('Digite seu numero:');
+
+       var boxnome = document.querySelector('.nome');
+       boxnome.innerHTML = 'USUÁRIO: ' + vnome;
+
+       var boxidade = document.querySelector('.idade');
+       boxidade.innerHTML = 'USUÁRIO: ' + vidade;
+
+       var boxsigno = document.querySelector('.signo');
+       boxsigno.innerHTML = 'USUÁRIO: ' + vsigno;
+
+       var boxemail = document.querySelector('.email');
+       boxemail.innerHTML = 'USUÁRIO: ' + vemail;
+
+       var boxnumero = document.querySelector('.numero');
+       boxnumero.innerHTML = 'USUÁRIO: ' + vnumero;
+        </script>
+</body>
+</html>
