@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100hv;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .baby{
+            width: 300px;
+            height: 300px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        /* Declarando variaveis */
+        var AcessoGlobal; /* É o tipo que pode ser axessada em todo progama */
+        let AcessoLocal; /* Pode ser acessada apenas no escopo em que nasceu */
+        /* Variavel do tipo const precisa ser inicializada */
+        const naoMuda = 'Esse valor é imutável'; /* Não pode ser alterada */
+
+        let nome, idade, altura; 
+        let num1 = 3, num2 = 4, num3 = 2;
+        var txt1 ='I', txt2 = 'love', txt3 = 'me'
+        const cachorro = ' AuAu';
+
+        nome = prompt('Diga seu nome');
+        idade = prompt('Diga sua idade');
+        
+        window.document.write('<h3>Salvee,' + nome + '!</h3>');
+        /* Modo abreviado */
+        document.write(nome + ', voce tem:' + idade + ' anos' + '<br>');
+        document.write('<br>');
+        document.write('Clique na imagem para saber quantos <br> filhos voce vai ter: <br>');
+        document.write('<img class="baby" src="baby.png"/>');
+
+        /* Armazenando a imagem do lado do javaScript */
+        let imgClique = document.querySelector('.baby');
+        imgClique.addEventListener('click', function(){
+            let filhos = Math.floor(Math.random() * 10);
+            document.write(nome + ', voce apesar de ja ter ' +  idade + ' anos,');
+            document.write('<br> seu carma é ter ' + filhos + ' de fihos correndo atras de voce');
+            document.write('<br> HAHAHAHA!!!!');
+        })
+
+        
+    </script>
+</body>
+</html>

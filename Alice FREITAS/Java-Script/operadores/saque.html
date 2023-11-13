@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saque Sant</title>
+</head>
+<body>
+    <script>
+        let nome, deposito, sacar;
+
+        nome = prompt('BEM VINDO AO BANCO SANT !!, por gentileza digite seu nome: ');
+        deposito = prompt('Qual o valor do seu depósito ?');
+        sacar = prompt('Quanto voce dejesa sacar ?');
+
+        window.document.write('Bem vindo, senhor(a) ' + nome + '!</h3>');
+        document.write('<br>');
+        document.write('Seu saldo é de: ' + deposito);
+        document.write('<br>');
+        document.write('Você deseja sacar: ' + sacar);
+        document.write('<br>');
+        document.write('Seu saldo com esse saque irá ficar: ' + (deposito - sacar));
+
+    </script>
+</body>
+</html>

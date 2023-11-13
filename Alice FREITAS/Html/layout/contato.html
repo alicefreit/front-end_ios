@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deixe sua messagem</title>
+
+</head>
+<body style="background-color: rgb(247, 192, 190);">
+<!--Cabeçalho do meu site-->
+    <header style="display: flex;">
+<!--Section foto de perfil-->
+        <section>
+            <img src="perfil.alice.jfif" alt="foto de perfil, gnomo vomitando um arco-íris" height="100px" width="100px">
+        </section>
+<!-- Section Informações Pessoais-->
+        <section>
+            <br><br>
+            &nbsp;&nbsp;&nbsp;           
+         AliceFreitas| 17 anos| @malice_freitas <br>
+         &nbsp;&nbsp;&nbsp;mariaalicefreitascardim@gamil.com
+        </section>
+
+    </header>
+<!--navegção da minha pagina-->
+    <nav>
+<!-- "<a> refere-se ao de link"-->
+       <hr>
+       <a href="mysite.html">About me</a> |
+       <a href="entretenimento.html">Entretenimento</a> |
+       <a href="musica.html">Musica</a> |
+       <a href="contato.html">Contato</a> |
+       <hr>
+    </nav>
+    <article>
+        <form action="mailto:mariaalicefreitascardim@gamil.com" 
+        method="post"
+    oninput="resultado.value = parseInt(valor01.value) + parseInt(valor02.value)">
+<br>
+<fieldset>
+    <legend><strong><i>CONTATO COM ALICE</i></strong></legend> <br>
+        <label for="cNome">Nome:</label> <br>
+        <input type="text" size="50" name="nome" id="cNome" 
+        required="required" placeholder="Alice Freitas">
+<br><br>
+        <label for="email">Email::</label> <br>
+        <input type="text" size="50" name="email" id="email" 
+        required="required" placeholder="ex@ex.com">
+<br><br>
+        <label for="numero">WhatsApp::</label> <br>
+        <input type="text" size="50" name="numero" id="numero" 
+        required="required" placeholder="(00)91111-2222">
+<br><br>
+        <label for="Data">Data de Nascimento:</label> <br>
+        <input type="date" size="50" name="data" id="Data" 
+        required="required" placeholder="dd\mm\aa">
+<br></br>
+        <p>Deixe sua mensagem:</p>
+        <textarea name="msg" id="" cols="30" rows="10"
+        placeholder="Escreva aqui sua mensagem:"></textarea>
+    </fieldset>
+<br></br>
+        <input type="submit" value="Enviar">
+    </form>
+    </article>
+    <footer>
+        <hr>
+        By Alice Freitas &copy;
+    </footer>   
+</body>
+</html>

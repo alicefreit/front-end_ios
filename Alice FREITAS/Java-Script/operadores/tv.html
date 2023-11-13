@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja legal's</title>
+</head>
+<body>
+    <script>
+        let cliente, produto, valor, parcelas, juros;
+        
+
+        cliente = prompt('Qual seu nome ?')
+        produto = prompt('Qual produto que você comprou ?')
+        valor = +prompt('Qual foi o valor do produto ?')
+        parcelas = +prompt('Quantas parcelas você fez ?')
+        juros = +prompt('Qual foi o juros que você tem (em porcentagem) ?')
+        
+        document.write('BEM VINDOO, ' + cliente);
+        document.write('O valor da parcela é: ' + ((valor * parcelas)/ juros * 100));
+        
+    </script>
+</body>
+</html>
+
+
+        
